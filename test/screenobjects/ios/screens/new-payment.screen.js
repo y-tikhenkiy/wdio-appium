@@ -10,6 +10,10 @@ export default class NewPaymentScreen{
         return faker.finance.amount();
     }
 
+    get transactionDetails(){
+        return faker.commerce.productName();
+    }
+
     get paymentTitleInput(){
         return $('//*[@value="Enter your payment"]');
     }

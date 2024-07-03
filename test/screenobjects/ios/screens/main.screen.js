@@ -6,4 +6,9 @@ export default class MainScreen{
     transactionTitle(name){
         return $(`~${name}`);
     }
+
+    getByAtrribute(name){
+        return $(`//*[@value="${name}"]`);
+    }
+
 }
