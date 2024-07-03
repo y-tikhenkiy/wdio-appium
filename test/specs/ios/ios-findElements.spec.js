@@ -51,13 +51,10 @@ describe('iOS Find Element', ()=>{
     })
 
     it.only('exercise - default search bar', async () =>{
-        // const alertText = 'label == "Alert Views"';
-        // const alertText = 'value BEGINSWITH[c] "alert"';
+
         const searchMenu = 'name == "Search"';
         const defaultMenu = 'name == "Default"';
         const searchBar = 'type == "XCUIElementTypeSearchField"';
-
-
 
         await $(`-ios predicate string:${searchMenu}`).click();
         await $(`-ios predicate string:${defaultMenu}`).click();
