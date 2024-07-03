@@ -1,4 +1,5 @@
 // const path = require ('path');
+require('dotenv').config()
 import path from 'path';
 
 export const config = {
