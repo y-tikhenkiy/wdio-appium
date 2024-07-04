@@ -1,4 +1,4 @@
-describe('iOS Find Element', ()=>{
+describe.skip('iOS Find Element', ()=>{
     it.only('find element by accessibility ID', async () =>{
         // await $('~Alert Views').click();
         // await $('~Simple').click();

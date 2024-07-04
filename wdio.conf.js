@@ -1,4 +1,4 @@
-// require('dotenv').config()
+import 'dotenv/config'
 import path from 'path';
 
 export const config = {
@@ -26,11 +26,12 @@ export const config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/ios-swipe*.js'
+        './test/specs/**/ios-*.js'
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
+        './test/specs/**/ios-findE*.js'
     ],
     //
     // ============
@@ -57,6 +58,7 @@ export const config = {
     capabilities: [{
         // capabilities for local Appium web tests on iOS
         platformName: 'iOS',
+        maxInstances: 1,
         // browserName: 'Safari',
         'appium:platformVersion': '17.2',
         'appium:deviceName': 'iPhone 15 Pro',

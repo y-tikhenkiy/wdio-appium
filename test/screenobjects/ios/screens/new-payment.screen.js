@@ -51,6 +51,10 @@ export default class NewPaymentScreen{
     get incomeButton() {
         return $("~INCOME");
     }
+    
+    get expenseButton() {
+        return $("~EXPENSE");
+    }
 
     get detailInput(){
         return $('//*[@value="Your personal note"]');
