@@ -26,7 +26,7 @@ export const config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/**/ios-mo*.js'
+        './test/specs/**/ios-swipe*.js'
     ],
     // Patterns to exclude.
     exclude: [
